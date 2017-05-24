@@ -2,16 +2,17 @@ package com.coolweather.android.db;
 
 import org.litepal.crud.DataSupport;
 
-/**
- * Created by Administrator on 2017/5/18 0018.
- */
-
 public class County extends DataSupport {
+
     private int id;
+
     private String countyName;
+
     private String weatherId;
+
     private int cityId;
-    public int getId(){
+
+    public int getId() {
         return id;
     }
 
@@ -19,12 +20,12 @@ public class County extends DataSupport {
         this.id = id;
     }
 
-    public void setCountyName(String countyName) {
-        this.countyName = countyName;
-    }
-
     public String getCountyName() {
         return countyName;
+    }
+
+    public void setCountyName(String countyName) {
+        this.countyName = countyName;
     }
 
     public String getWeatherId() {
@@ -42,4 +43,5 @@ public class County extends DataSupport {
     public void setCityId(int cityId) {
         this.cityId = cityId;
     }
+
 }
